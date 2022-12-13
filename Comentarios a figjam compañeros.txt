@@ -1,0 +1,4 @@
+Pantalla 1: Super resumido, claro, y con lenguaje canchero acorde al objetivo 
+Pantalla 2: La palabra "categorias" se entiende como boton. La reemplazaria por el listado de todas las categorias disponibles para bocetarlas y ya entender su disposicion.
+Pantalla 3: No se entiende si la seleccion de la imagen se hace mediante un click a la imagen en cuestion, al clickear "seleccionar imagen", o ambas acciones.
+Pantalla 4: Resumido, esta claro. Solo falta saber donde va a estar la imagen que seleccioné y que tengo que ver para confirmar.
