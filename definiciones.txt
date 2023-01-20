@@ -1,0 +1,15 @@
+Definiciones:
+
+Para lograr un objetivo, ya sea desarrollar una aplicacion, debemos hacerlo a traves de INSTRUCCIONES, que son una serie de pasos llamados "ALGORITMOS"
+Estas instrucciones se dan a mediante un lenguaje formal, un LENGUAJE DE PROGRAMACION
+
+
+lenguajes de alto nivel --> codigo
+lenguaje de bajo nivel --> 000110001101010
+
+
+Compilacion --> momento en el que la maquina interpreta todos los lenguajes distintos que contiene un programa. Un programa puede tener archivos con varios lenguajes de programacion, y ese momento en el que la maquina convierte todo el codigo que escribimos al codigo que la maquina entiende se llama compilacion.
+la compilacion toma todo el codigo fuente y lo transforma a un codigo ejecutable escrito.
+
+
+Framework??

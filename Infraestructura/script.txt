@@ -1,0 +1,18 @@
+req= curl https://raw.githubusercontent.com/olea/lemarios/master/nombres-propios-es.txt | shuf
+
+countA=0
+countL=0
+
+for nombre in $req
+do
+	if [[ $nombre == A* ]] && [$countA -le 4 ] ;
+	then
+		echo $nombre
+		let "countA++"
+	fi
+	if [[$nombre == L* ]] && [ $count -le 4 ] ;
+	then
+		echo $nombre
+		let "countL++"
+	fi
+done

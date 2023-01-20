@@ -1,0 +1,6 @@
+librerias
+framework
+bases de datos relacionales vs no relacionales
+web performante
+dependencia, mock, stub
+JDK 

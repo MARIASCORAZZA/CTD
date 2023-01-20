@@ -1,0 +1,6 @@
+change managment -> configuracion de cambios
+
+configuration management -> registra esos cambios en una base de datos
+
+
+https://www.veritis.com/blog/chef-vs-puppet-vs-ansible-comparison-of-devops-management-tools/

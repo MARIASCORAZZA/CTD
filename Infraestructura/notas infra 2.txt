@@ -1,0 +1,39 @@
+VAGRAND --> instancia maquinas virtuales mediante BOXES
+
+Debian NO es un hipervisor, no virtualiza, por esto necesita de de otro hipervisor como VirtualBox
+
+comando para listar todos los usuarios de una maquina virtual --> cat /etc/passwd
+
+
+curl -L -o /usr/bin/jq.exe    --> creo que es para trabajar con jq en windows
+
+
+192.168.0.203
+
+
+let cartas = document.querySelectorAll(".item")
+let boton = document.getElementById("tema")
+
+boton.addEventListener("click",modoOscuro)
+
+function modoOscuro(){
+for (const carta of cartas) {
+
+carta.classList.toggle("dark")
+}
+}
+
+
+
+
+
+
+https://drive.google.com/file/d/107I3fnHtHUX1HZwjnF-5hdrRxt5edALn/view     actividad infra sin hacer
+
+Comandos VIM:
+Entrar modo edición: i
+Salir modo edición: ESC
+Guardar: :wq
+
+
+

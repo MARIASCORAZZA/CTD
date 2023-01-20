@@ -1,0 +1,108 @@
+Delivered-To: mrcmariacorazza@gmail.com
+Received: by 2002:ab3:540f:0:0:0:0:0 with SMTP id e15csp3655565ltb;
+        Tue, 15 Nov 2022 04:50:41 -0800 (PST)
+X-Received: by 2002:a05:6402:f84:b0:461:c894:f6b5 with SMTP id eh4-20020a0564020f8400b00461c894f6b5mr15103091edb.52.1668516641378;
+        Tue, 15 Nov 2022 04:50:41 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1668516641; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Y2RacBitqDskWZ3AFJE0G8TEdhh7FfOE6DgnjpS7TxSUD7Cb5nHtzLNAdo9x4DEwSP
+         h9GEoKGKDAaRf6aFhKyTE/0dDcOmelpYlpXgR5sGabby/FinZpBsgW6oAaCmCpuojAaX
+         JzSCCyI5J1REN/3jEdZPbSxQ5tOU+n3Zhmilt/xN5y5nyIlUBo7q6oy9sDUq1dVN4kKw
+         ERmNmEIc760L8AjLX4x9AJYDECm1tyjJabPtvZ6oelaPnWf/QOK8idGHRhP6gMBC1+wj
+         EKHzkULBI/Ko16FYWWJsFhn1q5M4GQXTzv5GPZxvV4kRei4PLqja48khN7+QTOwb2DzW
+         Sg5w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ro5HFaBSNfktzRXwnNI3Yh07S1rGLfdqsEF1yJHFTys=;
+        b=Dk0Oh2hCfcS6KartYDxx0J5+7h/PCOI2qgcgkgJTCM9GOmWHsJJUR6Rz5zIkShTQi+
+         xtFg3wNTWNnNPU7kGHfbD/vUuY36PAbOdFZUhzAsubz83hFVia2WiCVXU6r3y/FDDlgf
+         UJMvQoE98lDFAxFLoatmUM1QXk5hs0Hd1m4eebiaKdiJiuvTNDGDIgNOU7yysxMEBrfh
+         sOoII4fYlRItVR7En2s+RrIbxMbIwKWD8fUToaBFuyIZ7ztCDeC1Iys2gYmqXNZnq1hs
+         ZUnkLrLQmIkVaO4yAVkgHDePa61r/aTuwT6jvJxMw+cutvDCKpvxbyfSHlxikHJVwiNC
+         E67g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@cest-fini.com header.s=google header.b=bLFUyAUk;
+       spf=softfail (google.com: domain of transitioning francisco@cest-fini.com does not designate 209.85.220.41 as permitted sender) smtp.mailfrom=francisco@cest-fini.com
+Return-Path: <francisco@cest-fini.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id lv1-20020a170906bc8100b007a7d0f8d53dsor5330397ejb.77.2022.11.15.04.50.41
+        for <mrcmariacorazza@gmail.com>
+        (Google Transport Security);
+        Tue, 15 Nov 2022 04:50:41 -0800 (PST)
+Received-SPF: softfail (google.com: domain of transitioning francisco@cest-fini.com does not designate 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@cest-fini.com header.s=google header.b=bLFUyAUk;
+       spf=softfail (google.com: domain of transitioning francisco@cest-fini.com does not designate 209.85.220.41 as permitted sender) smtp.mailfrom=francisco@cest-fini.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=cest-fini.com; s=google;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=ro5HFaBSNfktzRXwnNI3Yh07S1rGLfdqsEF1yJHFTys=;
+        b=bLFUyAUkXldY+AIv9Whp4vBGELz+OI9FTGzGt7NZ0XsWHCC6xVcUkLEJBYOmgVqYw7
+         O0W0EP0Z/u24yWRDyIPgDINVtGMGtXFfZ5LqMm+BcH45sMTvp8AA0yc1fOlq7kbuDryj
+         ulmGULxW+dUjbf60q06PeyrMecBFe50MrVuvPDQ8Nx21thwT/XKKxuXfV9aEMVP4q0Vs
+         0dwaGPcYYm71RLPMZbIP5/7OXsBqgXlLJUIgv7lJ8t5Ltst4ooC+O7wkczoqZW+XIXaG
+         CqihqjQ9BJApiGcWdk3wjNuxqbuQhulhF63RWpPeVKL7IdavCOkrhXTC6Z7TzgWB0Lk2
+         jw9Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=ro5HFaBSNfktzRXwnNI3Yh07S1rGLfdqsEF1yJHFTys=;
+        b=cdolioWX0FQYTtIpZRzWnrSY+x4/KH7NRDvQy9XJdeU+mD9K5glDDGKRulJky3tRm6
+         pJPHdbN2c4eOP0nZz2A3ZQcEGMW09ddNOqh0y0GFhpUvfHUMpe0kVxG0KRy2rY7ZnzBi
+         3e064XfVyumDiUuD4Aiq6yNMvxuX3OqENPSOeRw/Jeb+qju0qWTu3ZKS9oLNIG766BRS
+         r9rHqsJ3LsqVN6n8aBvEVlo9jaLX0ByHPKuiwgcWkffygbQChn4uupIXFzdH1Kv0BL8w
+         ytUfaE7hOWZGUl0VW5UwjSE0mfIVHfw3Sn+NBS1m0iXrj2BXto4iG8ijOWOXj7HTF028
+         a/wg==
+X-Gm-Message-State: ANoB5pnEPiQkhejIQBBQKf7DyLlENRbgJNbm+C8S6zcLOGN5csR6BoHr
+	JLcVxZmaIDJjsMADRbkHelOjH/baKnyas/gxUZlfwQ==
+X-Google-Smtp-Source: AA0mqf4X20jKUgJr0YyMqwNaVqmW5ck+72uyNHAST6Ubm69hKFIDtEydEXhdo76opCaOGfYSEC8C/dLdXmMVpsZQ/VI=
+X-Received: by 2002:a17:906:4a8b:b0:7ad:ba48:7e7c with SMTP id
+ x11-20020a1709064a8b00b007adba487e7cmr13798413eju.443.1668516641013; Tue, 15
+ Nov 2022 04:50:41 -0800 (PST)
+MIME-Version: 1.0
+From: Francisco Royo <francisco@cest-fini.com>
+Date: Tue, 15 Nov 2022 09:50:29 -0300
+Message-ID: <CAGuPRnO54xkO6tvq9Yo6vQP6e+zApFWLmA0SF5sxOrB2ABdsgA@mail.gmail.com>
+Subject: precios billeteras y portadocumentos
+To: Experiencia CEST FINI <experiencia@cest-fini.com>, Info CEST FINI <info@cest-fini.com>, 
+	=?UTF-8?Q?Mar=C3=ADa_Sol_Corazza?= <mrcmariacorazza@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000b098e605ed81cd2b"
+
+--000000000000b098e605ed81cd2b
+Content-Type: text/plain; charset="UTF-8"
+
+Chicas,
+
+Vamos a cmabiar 3 precios mas. Disculpen pero cambiamos de proveedor y
+quedaron muy atrasados
+
+portadocumentos 14900
+billetera grande 11900
+billetera chica 9900
+
+Hay que modificar en web y locales
+
+Gracias
+
+-- 
+C'EST FINI
+
+Francisco Royo
+
+--000000000000b098e605ed81cd2b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Chicas,<div><br></div><div>Vamos a cmabiar=C2=A03 precios =
+mas. Disculpen pero cambiamos de proveedor y quedaron muy atrasados</div><d=
+iv><br></div><div>portadocumentos 14900</div><div>billetera grande 11900</d=
+iv><div>billetera chica 9900</div><div><br></div><div>Hay que modificar en =
+web y locales</div><div><br></div><div>Gracias<br clear=3D"all"><div><br></=
+div>-- <br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gma=
+il_signature"><div dir=3D"ltr"><div><div>C&#39;EST FINI</div><div dir=3D"lt=
+r"><br></div><div dir=3D"ltr">Francisco Royo<div><br></div></div></div></di=
+v></div></div></div>
+
+--000000000000b098e605ed81cd2b--
